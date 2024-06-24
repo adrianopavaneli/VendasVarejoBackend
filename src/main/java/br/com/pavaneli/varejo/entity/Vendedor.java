@@ -37,6 +37,8 @@ public class Vendedor {
 	private String cep;
 	private String celular;
 	private String email;
+	@Column(nullable = false)
+	private String status;
 	
 	public Vendedor(VendedorDto vendedor) {
 		BeanUtils.copyProperties(vendedor, this);

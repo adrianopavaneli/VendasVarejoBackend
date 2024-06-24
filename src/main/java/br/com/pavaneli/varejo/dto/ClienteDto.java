@@ -25,7 +25,8 @@ public class ClienteDto {
 	private String cep;	
 	private String telefone;	
 	private String celular;	
-	private String email;
+	private String email;	
+	private String status;
 	
 	
 	public ClienteDto(Cliente cliente) {

@@ -2,7 +2,7 @@ package br.com.pavaneli.varejo.entity;
 
 import org.springframework.beans.BeanUtils;
 
-import br.com.pavaneli.varejo.dto.UsuarioDto;
+import br.com.pavaneli.varejo.dto.GrupoDto;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,7 +17,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Usuario {
+public class Grupo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -25,18 +25,8 @@ public class Usuario {
 	@Column(nullable = false)
 	private String nome;
 	
-	@Column(nullable = false, unique = true)
-	private String login;
 	
-	@Column(nullable = false)
-	private String senha;
-	
-	@Column(nullable = false)
-	private String email;
-	@Column(nullable = false)
-	private String status;
-
-	public Usuario(UsuarioDto usuario) {
-		BeanUtils.copyProperties(usuario, this);
+	public Grupo(GrupoDto grupo) {
+		BeanUtils.copyProperties(grupo, this);
 	}
 }

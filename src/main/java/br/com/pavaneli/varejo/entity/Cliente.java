@@ -49,6 +49,8 @@ public class Cliente {
 	private String celular;
 	@Column(nullable = false)
 	private String email;
+	@Column(nullable = false)
+	private String status;
 	
 	public Cliente(ClienteDto cliente) {
 		BeanUtils.copyProperties(cliente, this);

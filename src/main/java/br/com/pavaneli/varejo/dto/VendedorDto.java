@@ -21,6 +21,7 @@ public class VendedorDto {
 	private String cep;
 	private String celular;
 	private String email;
+	private String status;
 	
 	
 	public VendedorDto(Vendedor vendedor) {

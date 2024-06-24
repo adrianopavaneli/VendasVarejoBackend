@@ -24,6 +24,7 @@ public class FornecedorDto {
 	private String telefone;	
 	private String celular;	
 	private String email;
+	private String status;
 	
 	
 	public FornecedorDto(Fornecedor fornecedor) {
